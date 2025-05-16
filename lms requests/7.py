@@ -1,11 +1,17 @@
 from requests import get
-request = get(f"http://{input()}/users/{(i := input())}").json()
-if int(i) < len(request):
-    i -= 1
-    print(f'Письмо для: {request[i]["email"]}\
-    Здравствуйте, {request[i]["last_name"]} {request[i]["first_name"]}\
-    Мы рады сообщить вам о предстоящей акции! \
-    Все подробности на нашем сайте \
-    С уважением, команда тестового сервера!')
-else:
+import sys
+adress = input()
+i = input()
+text = sys.stdin.readlines()
+try:
+    request = get(f"http://{adress}/users/{i}").json()
+    for line in text:
+        #**request возвращает значения вида "ключ"="значение"
+        #format подставляет эти самые значения в строку 
+        print(line.format(**request), end="") #end нужен, тк в конце каждой строки сохраняется \n
+        
+except ValueError:
     print("Пользователь не найден")
+    
+
+    
