@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>496</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(18, 18, 18)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>640</y>
+      <width>471</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="photo_Label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>471</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(54, 54, 54); color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Пока нет изображения</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>690</y>
+      <width>471</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(54, 54, 54); color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Поиск по адресу или координатам</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="info_Label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>471</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(54, 54, 54); color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Информация об объекте</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="moreButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>720</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(54, 54, 54); color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Приблизить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lessButton">
+    <property name="geometry">
+     <rect>
+      <x>374</x>
+      <y>720</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(54, 54, 54); color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Отдалить</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
